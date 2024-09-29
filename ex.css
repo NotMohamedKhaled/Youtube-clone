@@ -1,0 +1,226 @@
+.header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: white;
+    display: flex;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    justify-content: space-between;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: rgb(202, 194, 194);
+z-index: 1400;
+}
+.tooltip{
+    width: max-content;
+    font-size: 13px;
+    border-radius: 4px;
+    color: white;
+    position: absolute;
+    background-color: gray;
+    padding: 3px;
+    bottom: -24px;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    left: 50%;
+    opacity: 0;
+    z-index: 6000;
+}
+.sidebar button .tooltip{
+    bottom: 10px;
+    font-size: 11px;
+}
+.sidebar button:hover .tooltip,
+.right button:hover .tooltip,
+.center button:hover .tooltip,
+.ytlink:hover .youtube-logo-tt {
+    opacity: 1;
+}
+ .youtube-logo-tt{
+    transition: opacity 0.3s;
+    font-size: 13px;
+    border-radius: 4px;
+    color: white;
+    position: absolute;
+    background-color: gray;
+    padding: 3px;
+    bottom: -10px;
+    left: 100px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.videostats a:link{
+    color: black ;
+    text-decoration: none;
+}
+.videostats  a:visited .title {
+    color: black;
+}
+
+.videostats .auther a {
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+}
+
+.auther:hover{
+    color: rgb(116, 115, 115);
+
+}
+
+img{
+    width: 25px;
+}
+button{
+    vertical-align: middle;  
+    height: 35px;
+    width: 40px;
+    cursor: pointer;
+}
+
+body{
+display: flex;
+flex: 1fr;
+justify-content: center;
+padding-top: 75px;
+padding-left: 180px;
+margin: 0;
+background-color: #f1f1f1;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+.center{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    flex: 1;
+    max-width: 800px;
+    margin-left: 80px;
+
+}
+.right{
+    width: 170px;
+    margin-right: 20px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+   
+}
+
+.mimi{
+    width: 25px;
+}
+.searchimg{
+    width: 25px;
+}
+
+.divicon{
+    align-items: start;
+    margin-left: 0px;
+    padding: 0px;
+}
+.cha{
+  margin-top: 5px;
+    width: 39px;
+}
+.right button{
+    position: relative;
+
+}
+
+.search{
+    flex: 1;
+    font-size: 18px;
+    font-weight: 500;
+     height: 35px;
+    padding-left: 15px;
+   border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  outline: none;
+}
+.search::placeholder{
+    font-size: 18px;
+}
+
+.iconn{
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-radius: 2px;    padding-top: 5px;
+    margin-top: 0px;
+    margin-left: -1px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  height: 39px;
+    width: 50px;
+}
+.ytlogo{
+    position: relative;
+    width: 110px;
+    cursor: pointer;
+}
+.ham{
+    height: 30px;
+    width: 28px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 25%;
+}
+.miciccon{
+    position: relative;
+    margin-left: 20px;
+    height: 40px;
+    width: 39px;
+border-radius: 50%;
+border: none;
+}
+    
+.ham:hover, .miciccon:hover, .ic1:hover, .ic2:hover, .ic3:hover, .right button:hover {
+    background-color: #e4e3e3;
+}
+
+.ham:active, .miciccon:active, .right button:active {
+    background-color: #c0bbbb;
+}
+
+.ic1{  
+    padding-top: 5px;
+    padding-left: 7px;
+      border: none;
+      background-color: white;
+      border-radius: 50%;
+      
+
+}
+.ic2{    
+    padding-top: 4px;
+    padding-left: 7px;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+
+
+}
+.ic3{
+    padding-top: 3px;
+  
+     border: none;
+     background-color: white;
+     border-radius: 50%;
+
+}
+.ic4{
+    border: none;
+}

@@ -1,0 +1,59 @@
+.sideandvideos{
+    display: flex;
+    flex-direction: row;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    position: fixed;
+    left: 0;
+    top: 50px;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 200;
+}
+
+.sidebar button {
+    align-items: center;
+}
+
+.home,.explore,.subscribe,.originals,.music,.library{
+    position: relative;
+    display: flex;
+   padding-left: 40px;
+    height: 80px;
+    width: 180px;  
+border: none;
+    background-color: #fff;
+    font-size: 11px;
+    border-radius: 10px;
+}
+.home:hover,.explore:hover,.subscribe:hover,.originals:hover,.music:hover,.library:hover{
+    background-color: #e4e3e3;
+}
+.home:active,.explore:active,.subscribe:active,.originals:active,.music:active,.library:active{
+    background-color: #c0bbbb;
+}
+.home{
+    margin-top: 10px;
+}
+.sidebar button p{
+    margin-left: 5px;
+}
+@media (max-width:1300px){
+ 
+    .sidebar button{
+        padding-left: 0px;
+width: 80px;
+display: block;
+    }
+    body{
+        padding-left: 80px ;
+    }
+    .sidebar button p{
+        display: block;
+    }
+
+    
+}
